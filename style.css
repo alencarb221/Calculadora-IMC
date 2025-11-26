@@ -1,58 +1,78 @@
-@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-        background-color: rgb(116, 211, 206);
-    }
+    background-image: linear-gradient(120deg, #000428 10%, #004e92 100%);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+    margin: 0px;
+}
 
-    h1 {
-        text-align: center;
-    }
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
 
+#calc {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    background-color: orange;
+    box-shadow: 5px 5px 5px black;
+}
+
+label {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+input {
+    width: 50%;
+    height: 40px;
+    background-color: gray;
+    box-shadow: 4px 4px 4px black;
+}
+
+input:focus {
+    background-color: white;
+}
+
+
+button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    background-color: crimson;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#resultado {
+    position: relative;
+    top: 15%;
+    background-color: coral;
+    color: white;
+    font-size: 2.5rem;
+
+}
+
+@media (max-width: 768px) {
     #calc {
-        border: 1px solid black;
-        width: 500px;
-        height: 400px;
-        margin: auto;
-        text-align: center;
-        padding-top: 20px;
-        background-color: orange;
+        width: 95%;
     }
-
-    label {
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    input {
-        height: 25px;
-        background-color: gray;
-        box-shadow: 4px 4px 4px black;
-    }
-
-    input:hover {
-        background-color: white;
-    }
-
-    button {
-        width: 200px;
-        height: 40px;
-        cursor: pointer;
-        box-shadow: 5px 5px 5px black;
-        background-color: crimson;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    button:hover {
-        background-color: darkgreen;
-    }
-
-    #resultado {
-       position: relative;
-       top: 15%;
-       background-color: coral;
-       color: white;
-       font-size: 25px;
-       
-    }
+}

@@ -19,4 +19,9 @@ function calcular() {
             } else if(imc > 40) {
                 res.innerHTML = `Seu IMC é ${imc} e você está com <strong>OBESIDADE GRAU III(MÓRBIDA)</strong>`
             }
+            peso = document.getElementById('peso').value = ''
+            altura = document.getElementById('altura').value = ''
+            
             }
+
+            
