@@ -9,8 +9,9 @@ body {
     display: flex;
     justify-content: center;
     justify-items: center;
-    height: 100vh;
-    margin: 0px;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -22,7 +23,6 @@ h1 {
     border: 1px solid black;
     border-radius: 15px;
     width: 50%;
-    height: 50%;
     margin: auto;
     text-align: center;
     padding-top: 20px;
@@ -63,9 +63,9 @@ button:hover {
 }
 
 #resultado {
-    position: relative;
-    top: 15%;
-    background-color: coral;
+    margin-top: 20px;
+    padding: 10px 0;
+    /* background-color: coral; */
     color: white;
     font-size: 2.5rem;
 
@@ -74,5 +74,10 @@ button:hover {
 @media (max-width: 768px) {
     #calc {
         width: 95%;
+        font-size: 1.2rem;
+    }
+
+    #resultado {
+        font-size: 1.8rem;
     }
 }
